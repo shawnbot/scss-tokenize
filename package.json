@@ -1,0 +1,32 @@
+{
+  "name": "scss-tokenize",
+  "description": "Parse SCSS variable declarations into JSON or YAML data",
+  "version": "1.0.0",
+  "bin": {
+    "scss-tokenize": "cli.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --verbose 'test/**/*.spec.js'",
+    "watch": "npm test -- --watch"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "tokens",
+    "design-tokens"
+  ],
+  "author": "Shawn Allen",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "js-yaml": "^3.10.0",
+    "query-ast": "^1.0.1",
+    "scss-parser": "^1.0.0",
+    "yargs": "^9.0.1"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "invariant": "^2.2.2"
+  }
+}
